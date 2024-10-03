@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -247,10 +247,12 @@ export default function Home() {
                   class="bg-[#D9DB30] rounded-full px-8 py-2 max-w-max font-bold hover:bg-[#eef0a9]"
                   type="submit"
                 >
-                  <img
+                  <Image
                     src="/icon-calculator.svg"
+                    width={40}
+                    height={40}
                     alt="Calc"
-                    className="inline h-50px w-50px pr-4"
+                    className="inline pr-4"
                   />
                   Calculate Repayments
                 </button>
@@ -286,9 +288,11 @@ export default function Home() {
           ) : (
             <div className="w-5/6 m-auto text-center lg:h-full lg:content-center">
               <div className="pb-4">
-                <img
+                <Image
                   className="m-auto"
                   src="/illustration-empty.svg"
+                  width={192}
+                  height={192}
                   alt="empty"
                 />
               </div>
